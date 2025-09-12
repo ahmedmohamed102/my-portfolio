@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Mohamed | Front-end Developer</title>
+    <meta name="description" content="Ahmed Mohamed, Front-end Developer. Showcasing projects using HTML, CSS, JavaScript, React, and modern UI frameworks.">
+    <link rel="icon" href="./img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="stylesheet" href="./style/dark-mode.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN Devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- CDN Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="./img/logo.png"
+            alt="Logo"
+            loading="lazy"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Ahmed Mohamed</h1>
+            <h2>Front-end Developer</h2>
+            <p>
+              I build beautiful, responsive websites with modern technologies
+            </p>
+            <a href="#projects" class="btn primary-btn">View My Portfolio</a>
+          </div>
+          <div class="hero-image">
+            <div class="profile-img-container">
+              <!-- Replace with your actual image path -->
+              <img
+                src="./img/profile.jpg"
+                alt="Ahmed Mohamed"
+                class="profile-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I’m a Front-End Developer with a strong focus on building fast,
+              intuitive, and user-friendly websites. I have a keen eye for
+              detail, follow instructions meticulously, and always aim to
+              deliver the best possible user experience using modern
+              technologies and industry best practices.
+              <br />
+              Passionate about continuous learning and self-development, I
+              constantly seek new ways to improve my skills and stay updated
+              with the latest trends in web development. My goal is to create
+              clean, efficient, and scalable front-end solutions that make a
+              real impact.
+            </p>
+          </div>
+          <div class="key-skills">
+            <h3>Key Skills</h3>
+            <ul>
+              <li><span>HTML5</span></li>
+              <li><span>CSS3</span></li>
+              <li><span>JavaScript</span></li>
+              <li><span>React</span></li>
+              <li><span>Next.js</span></li>
+              <li><span>Tailwind CSS</span></li>
+              <li><span>Ant Design</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+          <!-- Languages & Technologies -->
+          <div class="skill-card">
+            <i class="devicon-html5-plain colored"></i>
+            <h3>HTML</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-css3-plain colored"></i>
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-typescript-plain colored"></i>
+            <h3>TypeScript</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <h3>ES6</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-jquery-plain colored"></i>
+            <h3>jQuery</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-react-original colored"></i>
+            <h3>React.js</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-n"></i>
+            <h3>Next.js</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <h3>Bootstrap</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-tailwindcss-plain colored"></i>
+            <h3>Tailwind</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-sass-original colored"></i>
+            <h3>SASS</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-wordpress-plain colored"></i>
+            <h3>WordPress</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-globe"></i>
+            <h3>Ajax</h3>
+          </div>
+
+          <!-- UI Frameworks -->
+          <div class="skill-card">
+            <i class="devicon-react-original colored"></i>
+            <h3>Ant Design</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-materialui-plain colored"></i>
+            <h3>Material UI</h3>
+          </div>
+
+          <!-- Tools & Version Control -->
+          <div class="skill-card">
+            <i class="devicon-git-plain colored"></i>
+            <h3>Git</h3>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-github-original"></i>
+            <h3>GitHub</h3>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card">
+            <i class="devicon-php-plain colored"></i>
+            <h3>PHP</h3>
+          </div>
+
+          <!-- State Management -->
+          <div class="skill-card">
+            <i class="devicon-redux-original colored"></i>
+            <h3>Redux</h3>
+          </div>
+
+          <!-- Other -->
+          <div class="skill-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Responsive Design</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-network-wired"></i>
+            <h3>REST APIs</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="./img/project1.png" alt="Project 1" loading="lazy"/>
+            </div>
+            <div class="project-info">
+              <h3>Online Store</h3>
+              <p>
+                A simple yet elegant e-commerce website for a clothing store.
+                The website displays a grid of featured products with pricing,
+                ratings, and product details. Users can browse through the
+                catalog and add items to their shopping cart.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://ahmedmohamed102.github.io/Store/index.html"
+                  target="_blank"
+                  class="btn secondary-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/ahmedmohamed102/Store"
+                  target="_blank"
+                  class="btn outline-btn"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="./img/project2.png" alt="Project 2" loading="lazy"/>
+            </div>
+            <div class="project-info">
+              <h3>CRUD App</h3>
+              <p>
+                A simple yet functional product management system that allows
+                users to create, read, update, and delete (CRUD) product data.
+                The app supports calculating total price dynamically based on
+                input fields (price, taxes, ads, discount), and includes search
+                functionality by title or category.
+              </p>
+              <div class="project-links">
+                <a href="" target="_blank" class="btn secondary-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/ahmedmohamed102/Cruds"
+                  target="_blank"
+                  class="btn outline-btn"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="./img/project3.png" alt="Project 3" loading="lazy"/>
+            </div>
+            <div class="project-info">
+              <h3>Admin Dashboard</h3>
+              <p>
+                A responsive admin dashboard built with React.js and Material
+                UI. The dashboard supports both light anddark modes and displays
+                various analytics such as revenue, sales, user activity, and
+                recent transactionsusing different types of charts.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://ahmedmohamed102.github.io/dashboard-pro/"
+                  target="_blank"
+                  class="btn secondary-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/ahmedmohamed102/dashboard-pro"
+                  target="_blank"
+                  class="btn outline-btn"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              I create fast, modern, and SEO-friendly websites using the latest
+              technologies.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive Design</h3>
+            <p>
+              Ensuring your website looks great on mobile, tablet, and desktop
+              devices.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fab fa-react"></i>
+            <h3>React Apps</h3>
+            <p>
+              Building interactive and scalable web applications with React.js
+              and Next.js.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-layer-group"></i>
+            <h3>UI Frameworks Integration</h3>
+            <p>
+              Using Tailwind, Bootstrap, and Ant Design to build fast, elegant,
+              and professional UIs.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-plug"></i>
+            <h3>API Integration</h3>
+            <p>
+              Connecting front-end with REST APIs to fetch and display dynamic
+              content seamlessly.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fab fa-wordpress"></i>
+            <h3>WordPress Customization</h3>
+            <p>
+              Customizing WordPress themes and plugins to match client
+              requirements perfectly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:ahmed.mohamed@example.com"
+                  >ahmedmohamed04511@gmail.com</a
+                >
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <h3>Phone</h3>
+              <p><a href="tel:+1234567890">01007917805</a></p>
+            </div>
+
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <h3>LinkedIn</h3>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/ahmed-torky-7b1406325/"
+                  target="_blank"
+                  >ahmedmohamed</a
+                >
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <h3>GitHub</h3>
+              <p>
+                <a href="https://github.com/ahmedmohamed102" target="_blank"
+                  >github</a
+                >
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Ahmed Mohamed. All Rights Reserved.</p>
+        <!-- <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div> -->
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
