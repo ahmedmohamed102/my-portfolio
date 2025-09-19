@@ -135,8 +135,9 @@ img {
 nav {
   position: fixed;
   top: 0;
-  left: 10%;
-  width: 80%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
@@ -421,8 +422,8 @@ nav .container {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .project-card {
@@ -436,13 +437,13 @@ nav .container {
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
 .project-img {
   overflow: hidden;
-  height: 200px;
+  height: 150px;
 }
 
 .project-img img {
@@ -453,38 +454,44 @@ nav .container {
 }
 
 .project-card:hover .project-img img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .project-info {
-  padding: 25px;
+  padding: 15px;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 .project-info h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
   color: var(--text-color);
 }
 
 .project-info p {
   color: var(--dark-gray);
-  margin-bottom: 20px;
-  font-size: 0.95rem;
+  margin-bottom: 15px;
+  font-size: 0.85rem;
   flex: 1;
+
+  /* To keep the description short (only two lines) */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-links {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   margin-top: auto;
 }
 
 .project-links .btn {
-  padding: 8px 20px;
-  font-size: 0.9rem;
+  padding: 6px 15px;
+  font-size: 0.8rem;
 }
 
 /* Services Section */
@@ -514,7 +521,6 @@ nav .container {
   text-align: center;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  /* transition: all 0.3s ease; */
   position: relative;
   overflow: hidden;
   transition: var(--transition);
@@ -539,7 +545,6 @@ nav .container {
   line-height: 1.6;
 }
 
-/* Hover Effects */
 .service-card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
