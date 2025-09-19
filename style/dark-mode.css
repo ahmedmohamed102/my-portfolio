@@ -62,7 +62,7 @@
 }
 
 :root.dark-theme footer {
-    background-color: var(--light-gray);
+    background-color: var(--white);
 }
 
 /* Dark mode toggle button */
@@ -94,3 +94,7 @@
 .theme-toggle:hover {
     transform: rotate(30deg);
 }
+
+:root.dark-theme .contactForm button {
+    color: var(--text-color);
+}   

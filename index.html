@@ -270,7 +270,10 @@
                 functionality by title or category.
               </p>
               <div class="project-links">
-                <a href="https://ahmedmohamed102.github.io/Cruds/" target="_blank" class="btn secondary-btn"
+                <a
+                  href="https://ahmedmohamed102.github.io/Cruds/"
+                  target="_blank"
+                  class="btn secondary-btn"
                   >Live Demo</a
                 >
                 <a
@@ -517,7 +520,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title">Contact Me</h2>
         <div class="contact-content">
           <div class="contact-info">
             <div class="contact-item">
@@ -533,7 +536,7 @@
             <div class="contact-item">
               <i class="fas fa-phone"></i>
               <h3>Phone</h3>
-              <p><a href="tel:+1234567890">01007917805</a></p>
+              <p><a href="tel:+1234567890">+201007917805</a></p>
             </div>
 
             <div class="contact-item">
@@ -562,16 +565,65 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Ahmed Mohamed. All Rights Reserved.</p>
-        <!-- <div class="social-links">
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </div> -->
+    <!-- contactForm Section -->
+    <section class="contactForm">
+      <div class="contactForm-container">
+        <div>
+          <h2>Send Me a Message</h2>
+          <p>Feel free to send me a message directly via email.</p>
+        </div>
+        <form
+          class="contactForm-form"
+          action="https://formspree.io/f/xldwqwdl"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your message"
+            rows="4"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
       </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-logo">
+          <img src="./img/logo.png" alt="Logo" />
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/ahmed-torky-7b1406325"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/ahmedmohamed102" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer-copy">&copy; 2025 Ahmed Mohamed. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
