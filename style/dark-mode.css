@@ -96,5 +96,5 @@
 }
 
 :root.dark-theme .contactForm button {
-    color: var(--text-color);
+    color: var(--light-gray);
 }   
