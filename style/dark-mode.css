@@ -80,6 +80,7 @@
     margin-left: 20px;
     border: none;
     outline: none;
+    padding: 5px 4px 4px 5px;
 }
 
 :root.dark-theme .theme-toggle {
@@ -97,4 +98,8 @@
 
 :root.dark-theme .contactForm button {
     color: var(--light-gray);
-}   
+}
+
+:root.dark-theme .devicon-express-original {
+    color: #f5f5f5;
+}
