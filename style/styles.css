@@ -385,6 +385,10 @@ nav .container {
   list-style: none;
 }
 
+.key-skills ul li {
+  margin-bottom: 6px;
+}
+
 .key-skills span {
   padding: 0.5rem 1rem;
   background: rgba(184, 134, 11, 0.1);
@@ -748,7 +752,7 @@ nav .container {
 }
 
 .footer-links li a:hover {
-  color: var(--primary-color) !important;;
+  color: var(--primary-color) !important;
 }
 
 .footer-copy {
@@ -827,10 +831,51 @@ nav .container {
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
     z-index: 999;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
   }
 
   .nav-links.active {
     right: 0;
+  }
+
+  /* Fix for Services Grid causing overflow on small screens */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Centering Content on Mobile */
+  .about-content {
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .about-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .key-skills ul {
+    justify-content: center;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+
+  .contactForm-container {
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .contactForm h2,
+  .contactForm p {
+    text-align: center;
   }
 
   .profile-img-container {
