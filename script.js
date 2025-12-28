@@ -12,9 +12,11 @@ const rootElement = document.documentElement;
 const getCurrentTheme = () => {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme) return savedTheme;
-  
+
   // Check system preference
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
 };
 
 // Apply theme
@@ -34,7 +36,9 @@ applyTheme(getCurrentTheme());
 
 // Toggle theme on button click
 themeToggle.addEventListener("click", () => {
-  const newTheme = rootElement.classList.contains("dark-theme") ? "light" : "dark";
+  const newTheme = rootElement.classList.contains("dark-theme")
+    ? "light"
+    : "dark";
   applyTheme(newTheme);
 });
 
@@ -138,10 +142,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("nav");
   if (window.scrollY > 50) {
-    nav.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
-    nav.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
+    nav.classList.add("scrolled");
   } else {
-    nav.style.boxShadow = "none";
-    nav.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
+    nav.classList.remove("scrolled");
   }
 });
